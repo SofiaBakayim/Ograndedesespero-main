@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos vs2</title>
+    <!--Normalize-->
+    <link rel="stylesheet" type="Text/css" href="../Exercícios/css/normalize.css">
+    <!--Html5shiv-->
+    <!--[if It Ie 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![end]-->
+
+    <style>
+
+        h1{
+            margin: 10px;
+        }
+
+        h2::first-letter {
+            font-size: 3em;
+            font-style: italic;
+            color: yellowgreen;
+            margin: 10px;
+        }
+
+        p::first-line{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        p::selection{
+            background-color: blue;
+            color: gold;
+        }
+        
+        #ideia{
+            background-color: brown;
+            color: aliceblue;
+        }
+
+        #ideia::selection{
+            background-color: blue;
+            color: gold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <h2>Exemplo de Pseudo-Elementos</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla pariatur deleniti provident quidem
+        voluptatum, esse, nisi <span id="ideia">magnam</span> adipisci iure repellat, voluptatibus nostrum dicta! Distinctio pariatur
+        perferendis officiis voluptates. Porro!</p>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío 3 - Média de 3 notas</title>
+    <script>
+        let nota_1 = prompt('Digite a nota do teste 1')
+        let nota_2 = prompt('Digite a nota do teste 2')
+        let nota_3 = prompt('Digite a nota do teste 3')//devolve string
+
+        /*console.log(nota_1)
+        console.log(nota_2)
+        console.log(nota_3)*/
+
+        //media
+        let media = (parseFloat(nota_1) + parseFloat(nota_2) + parseFloat(nota_3))/3
+
+        //decisão
+        if(media> 10 && media <=20){
+            //console.log('Media: ' + Math.round(media) + 'Aprovado!')
+            console.log('Media ' + media.toFixed(2) + 'Aprovado!') //toFixed(2) arredonda as duas casas decimais se tiver 3 arredonda às 3
+        }
+        else{
+            //console.log('Media: ' + Math.round(media) + 'Reprovado!')
+            console.log('Media ' + media.toFixed(2) + 'Reprovado!')
+        }
+        
+        /*let value = null;
+        value = prompt ('Nota do teste');
+        let valor = parseInt
+
+        if(parseInt(value) >= 10 && value < 20){
+            console.log("Aprovado")
+        }
+        else if(parseInt(value) <= 10 && value >0){
+            console.log("Reprovado")
+        }*/
+    </script>
+</head>
+<body>
+    <h1>Media das 3 Notas</h1>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <!--Normalize-->
+    <link rel="stylesheet" type="Text/css" href="../Exercícios/css/normalize.css">
+    <!--Html5shiv-->
+    <!--[if It Ie 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![end]-->
+    <style>
+        h2 {
+            position: relative;
+            width: max-content; /*Significa que só irá até ao fim da largura do texto*/
+            padding-bottom: 5px;
+        }
+
+        h2::after{
+            content: '🎶🍎🧇⛸️⚽️';/*ctrl + CMD + space*/
+            /*Sempre essenccial quando queremos fazer o ::after ou o ::before*/
+            /*background-color: red;*/
+            background: linear-gradient(to right, orange, blue);
+            border-radius: 3px;
+            height: 4px;
+            width: 100%;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 300ms ease; 
+        }
+
+        h2:hover::after{
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <h2>Hoje está um lindo dia!</h2>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+body{
+    background: #d2d2c1 url('images/fundo.png') repeat-y;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#principal{
+    width: 900px;
+    margin: 0 auto;
+    /* border: 5px solid red*/
+}
+#menu{
+    background-color: #c5c5b2;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+/* links*/
+a{
+    color: #4b566a;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+#conteudo{
+    background-color: #e8e8d9;
+    padding: 10px;
+}
+#rodape{
+    text-align: center;
+}
+h1{
+    color: #828271;
+    font-size: 1.4em;
+    /*
+    1 em - 16
+    1.4 em - 16*1.4= 19.2 */
+}
+h2{
+    color: #828271;
+    font-size: 1.1em;
+}
+/* campanhas publicitárias */
+.img-campanhas{
+    border: 10px solid #c3c3ae;
+}
+.centrar{
+    text-align: center;
+}

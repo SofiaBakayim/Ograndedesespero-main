@@ -1,0 +1,55 @@
+@-webkit-keyframes animacao-caixa{
+    from{
+        background:orange;
+        border-radius: 10px;
+
+        /*deslocamento*/
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        background:red;
+        border-radius: 100px;
+
+        /*deslocamento*/
+        left: 600px;
+        /*top: 200px;*/
+    }
+}
+@keyframes animacao-caixa{
+    from{
+        background:orange;
+        border-radius: 10px;
+
+        /*deslocamento*/
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        background:red;
+        border-radius: 100px;
+
+        /*deslocamento*/
+        left: 600px;
+        /*top: 200px;*/
+    }
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    background:orange;
+    border-radius: 10px;
+
+    /*position: relative;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;*/
+
+    /*prefixo - chrome, safari, opera*/
+    -webkit-animation: animacao-caixa 5s 2s infinite alternate-reverse ease;
+    animation: animacao-caixa 5s 2s infinite alternate-reverse ease;
+}

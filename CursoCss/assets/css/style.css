@@ -1,0 +1,36 @@
+body{
+    font-size: 16px;
+    /* background-color: #f0f8ff;*/
+}
+#geral{
+    width: 900px;
+    background-color: aliceblue;
+    border: 1px solid orange;
+    
+    border-color: red green yellow;
+    border-width: 15px 10px 5px 10px;
+    border-style: solid dashed dotted outset;
+}
+#cabecalho{
+    background-color: blueviolet;
+    margin: 8px;
+    /* background-color: blueviolet;*/
+}
+img{
+    width: 158px;
+}
+#conteudo{
+    background-color: burlywood;
+    margin: 8px;
+    /*background-color: burlywood;*/
+}
+.linha{
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    font-size: 2em;
+}
+.destaque{
+    font-weight: bold;
+    background-color: brown;
+    padding: 3px;
+}

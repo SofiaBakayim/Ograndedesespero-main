@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 </title>
+    <script>
+        const lista_menu = []
+        //const menu = ['Home', 'Serviços', 'Contactos']
+        
+        lista_menu[0] = 'Home'
+        lista_menu[1] = 'Serviço'
+        lista_menu[2] = 'Contacto'
+
+        console.log(lista_menu)
+
+        //Adicionar um elemento no fim do array
+        lista_menu.push('Loja')
+        console.log(lista_menu)
+
+        //Adicionar um elemento no fim do array
+        lista_menu.push('Carrinho de Compras')
+        console.log(lista_menu)
+
+        </script>
+</head>
+<body>
+    <h1>Menu</h1>
+    <ul id="lista">
+        <script>
+            let i = 0
+            while(i < lista_menu.length){
+                document.write('<li>' +  lista_menu[i] + '</li>')
+
+                //condição de paragem
+                i++
+            }
+        </script>
+    </ul>
+</body>
+</html>

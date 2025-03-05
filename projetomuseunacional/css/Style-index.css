@@ -1,0 +1,231 @@
+* {
+    /* CSS Reset*/
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f4f2ec url(../Assets/images/fundo.png) repeat-x;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 1080px;
+    /*Largura padrão de site de Vídeos*/
+    /*
+    Lado esquerdo - 710px
+    Lado direito (aside) - 350px
+    Espaçamento entres eles - 20px
+    */
+    margin: 0px auto;
+}
+
+header {
+    padding: 15px;
+    height: 55px;
+}
+
+#logo {
+    width: 248px;
+    height: 21px;
+    background: url(../Assets/images/logo.png) no-repeat;
+    margin-top: 10px;
+    float: left;
+}
+
+/*navegação*/
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    /* faz o link ocupar toda a area do li*/
+    margin-right: 25px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+/* Links*/
+/* estados - não visitados, visitados e ativos*/
+
+a:link,
+a:visited,
+a:active {
+    color: #af670a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+.clear {
+    clear: both;
+}
+
+/*---Footer---*/
+
+footer {
+    text-align: center;
+    background: url(../Assets/images/fundo-rodape.png) no-repeat center top;
+}
+
+footer>p a {
+    padding: 3px 10px;
+}
+
+footer>p a:hover {
+    color: green;
+}
+
+/*Parte 2 - 12/02*/
+
+#conteudo {
+    width: 710px;
+    float: left;
+}
+
+aside {
+    width: 350px;
+    float: right;
+    background-color: #ebe7dd;
+    margin-bottom: 20px;
+}
+
+section#visita {
+    margin-top: 10px;
+    background-color: #cdc8b1;
+    padding: 27px;
+}
+
+section#visita,
+section#galeria h4 {
+    margin-top: 10px;
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+/*Formulário*/
+
+input {
+    height: 20px;
+    width: 80px;
+    background-color: white;
+    border: none;
+    font-size: 1em;
+}
+
+.campo {
+    border: 1px solid #ada484;
+}
+
+#qtd {
+    width: 30px
+}
+
+.botao {
+    width: 100%;
+    background-color: #ada484;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px;
+    margin: 3px;
+}
+
+/*Galeria de Fotos*/
+
+section#galeria {
+    padding: 27px;
+}
+
+section#galeria a {
+    display: block;
+    /*border: 1px solid dashed red;*/
+    background: url(../Assets/images/fundo-foto.png) no-repeat;
+    float: left;
+
+    padding: 17px 15px 17px 15px;
+    margin: 10px 0px 30px 10px;
+}
+
+section#galeria img {
+    margin-top: 3px;
+}
+
+/*Parte 3 - Conteudo central (esq) 
+1. article (geral)
+2. alinhamentos com article 
+2. h3
+*/
+
+article {
+    width: 310px;
+    float: left;
+}
+
+article#video {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+article#mapa {
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+article#exposiçoes {
+    margin: 15px 0px 0px 25px;
+}
+
+article#exposiçoes ul {
+    margin-left: 15px;
+}
+
+article#historia {
+    margin: 15px 0 0 38px;
+}
+
+h3 {
+    color: green;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 3px;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 700px) {
+
+    nav, #container, #conteudo{
+        float: left;
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+
+    body, aside {
+        background-color: green;
+    }
+
+    aside{
+        text-align: center;
+        float: left;
+        width: 100%;
+        clear: both;
+    }
+}

@@ -1,0 +1,25 @@
+
+#container{
+    background-color: #e07d27;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /* Direção das colunas -> flex-direction: row | row-reverse | column | column-reverse*/
+    /* flex-wrap: nowrap | wrap | wrap-reverse | */
+    /* Alinhamento horizontal -> justify-content: flex-start (default)| flex-end | center | space-between | space-around */
+    /* Alinhamento Vertical -> Align-items: stretch | flex-start | center | baseline */
+}
+
+.Item{
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    
+}

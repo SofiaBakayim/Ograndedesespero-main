@@ -1,0 +1,26 @@
+/* position - static, relative*/
+body{
+    background: #007fc7;
+}
+#container{
+    background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    /*position: static;*/
+}
+
+p{
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #000;    
+}
+
+.relative{
+    position: relative;
+    /*Propriedades de posicionamento*/
+    top: 50px; /*Desloca elemento para baixo*/
+    left: 200px; /*Desloca elemento para a direita*/
+}

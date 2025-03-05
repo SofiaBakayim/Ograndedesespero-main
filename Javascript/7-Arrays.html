@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        //const lista_frutas = Array() -> Posso usar desta forma ou da forma de baixo
+        const lista_frutas = []
+
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Morango'
+        lista_frutas[2] = 'Pêra'
+        lista_frutas[3] = 'Mãça'
+        lista_frutas[4] = 'Pêssego'
+        lista_frutas[5] = 'Kiwi'
+
+        console.log(lista_frutas)
+        console.log('Tamanho: ' + lista_frutas.length) //Número de elementos (lenght)
+        console.log(lista_frutas[3])
+
+        //Alterar elementos 
+        lista_frutas[3] = 'Papaia'
+        console.log(lista_frutas)
+
+        //Adicionar um elemento no fim do array
+        lista_frutas.push('Abacate')
+        lista_frutas.push('Ameixa')
+        console.log(lista_frutas)
+
+        //Adicionar um elemento no início do array
+        lista_frutas.unshift('Abacaxi')
+        console.log(lista_frutas)
+
+        //Apagar o último elemento 
+        lista_frutas.pop() //Não é necessário colocar algum valor, faz sozinho 
+        console.log(lista_frutas)
+
+        //Apagar o primeiro elemento 
+        lista_frutas.shift()
+        console.log(lista_frutas)
+
+        //Tamanho do array final:
+        console.log(lista_frutas.length)
+
+        //-- Pesquisas --
+        console.log('Indíce do array com a palavra Abacate: ' + lista_frutas.lastIndexOf('Abacate'))
+
+        //Refaturizar o Código -> Torna-lo mais funcional
+        let pesquisa = lista_frutas.indexOf('Pêssego')
+
+        if (pesquisa === -1) {
+            console.log('Não existe a fruta procurada na lista de frutas')
+        }
+        else {
+            console.log('Existe a fruta procurada na lista de frutas com o índice: ' + pesquisa)
+        }
+
+        //--ordenação do array (abc)
+        console.log(lista_frutas.sort())
+
+    </script>
+    <style>
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: chocolate;
+            justify-content: center;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px
+        }
+        li{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(74, 63, 55);
+            justify-content: center;
+            text-align: center;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de Frutas</h1>
+    <ul>
+        <li>Banana</li>
+    </ul>
+</body>
+
+</html>

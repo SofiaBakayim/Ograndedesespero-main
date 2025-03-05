@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío 4</title>
+    <script>
+        let age = null;
+        age = prompt ('Digite a sua idade');
+        let idade = parseInt(age)
+        let msg = ''
+
+        if(idade >= 0 && age < 15){
+           // console.log("Criança!")
+           msg = 'Criança'
+        }
+        else if(idade >= 15 && age < 30){
+            //console.log("Jovem!")
+            msg = 'Jovem'
+        }
+        else if(idade >= 30 && age < 60){
+            //console.log("Adulto!")
+            msg = 'Adulto'
+        }
+        else if(idade >= 60 && age < 100){
+            //console.log("Idoso!")
+            msg = 'Idoso'
+        }
+        else{
+            msg = 'Idade Inválida'
+        }
+
+        console.log(msg)
+    
+    </script>
+</head>
+<body>
+    <h1>Qual a tua faixa etária!</h1>
+</body>
+</html>

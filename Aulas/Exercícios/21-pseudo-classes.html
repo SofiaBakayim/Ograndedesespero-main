@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+     <!--Normalize-->
+     <link rel="stylesheet" type="Text/css" href="../Exercícios/css/normalize.css">
+     <!--Html5shiv-->
+     <!--[if It Ie 9]>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <![end]-->
+     
+     <style>
+        li{
+            margin: 5px;
+            padding: 3px;
+            list-style: none;
+        }
+
+        li:hover{
+            background-color: yellow;
+            width: 70px;
+        }
+
+        li:not(:hover){
+            background-color: #ccc;
+            width: 70px;
+        }
+
+        li:nth-child(2n +1){ /*1, 2 , odd, even, 2n, 3n*/
+            text-decoration: underline;
+        }
+     </style>
+
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <h2>a:link, a:visited, a:hover, a:active</h2>
+    <h1>Unordered list</h1>
+    <ul>
+        <li>Item #1</li>
+        <li>Item #2</li>
+        <li>Item #3</li>
+        <li>Item #4</li>
+        <li>Item #5</li>
+        <li>Item #6</li>
+        <li>Item #7</li>
+        <li>Item #8</li>
+        <li>Item #9</li>
+    </ul>
+</body>
+</html>

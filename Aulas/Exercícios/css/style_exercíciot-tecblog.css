@@ -1,0 +1,144 @@
+/*limpar formato padrão do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e6e6e6;
+    font-size: 16px; /*1em*/
+}
+/* --- Layout --- */
+
+#header{
+    background-color: #f7b600;
+    color: #fff;
+    text-align: center;
+}
+
+#header-logo, #menu{
+    padding: 10px;
+}
+
+/*formatações gerais*/
+
+#header-logo h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+.branco{
+    color: #e6e6e6;
+}
+
+/* --- Menu --- */
+/* --- links --- */
+
+a{
+    text-decoration: none;
+
+}
+#header a:link, #header a:visited{
+    color: #fff;
+    padding: 8px 10px;
+}
+
+#header a:hover{
+    background-color: #fff;
+    color: #f7b600;
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #f7b600;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#area-principal{
+    width: 920px;
+    margin: 0 auto; /*centraliza conteudo */
+    padding: 15px;
+}
+
+#area-postagem{
+    width: 660px;
+    background-color: #fff;
+    float: left;
+}
+
+#area-lateral{
+    width: 240px;
+    float: right;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    background-color: #ccc;
+    padding: 15px;
+}
+
+/* --- Postagens ---*/
+
+.postagem{
+    margin-bottom: 20px; /* espaçamento interno */
+    background-color: #fff; 
+    /*border: 1px solid #ccc;*/
+    padding: 20px; /* espaçamento externo */
+}
+
+.imagens-postagem{
+    width: 620px;
+}
+
+.data{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px dotted #ccc;
+}
+
+h2{
+    color: #f7b600;
+    font-size: 1.5em;
+}
+
+h3{
+    color: #4e4e4e;
+    background-color: #ccc;
+    padding: 5px;
+}
+
+/* --- Postagens Recentes ---*/
+
+.conteudo-lateral{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #982860;
+}
+
+.texto-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted;
+}
+
+.sem-borda{
+    border: none;
+}
+
+.link-cat{
+    display: block;
+    border: none;
+}
+

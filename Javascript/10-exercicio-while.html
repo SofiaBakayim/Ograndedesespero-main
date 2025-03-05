@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <script>
+        const lista_frutas = []
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Maça'
+        lista_frutas[2] = 'Pera'
+        lista_frutas[3] = 'Morango'
+        lista_frutas[4] = 'Uva'
+        lista_frutas[5] = 'Abacate'
+
+
+    </script>
+</head>
+<body>
+    <h1>Lista de Frutas</h1>
+    <ul id="lista">
+        <script>
+            let i = 0
+            while(i < lista_frutas.length){
+                document.write('<li>' +  lista_frutas[i] + '</li>')
+
+                //condição de paragem
+                i++
+            }
+        </script>
+    </ul>
+</body>
+</html>
