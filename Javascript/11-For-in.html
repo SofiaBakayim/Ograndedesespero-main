@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo For ..In</title>
+    <script>
+        const lista_convidados = ['João', 'Maria', 'Pedro', 'Carla', 'José'];
+        console.log(lista_convidados);
+
+        //Indices do array não sequênciais
+        const lista_convidados2 = Array()
+
+        lista_convidados2['a'] = 'João';
+        lista_convidados2[10] = 'Maria';
+        lista_convidados2['zebra'] = 'Pedro';
+        lista_convidados2['porto'] = 'Carla';
+        lista_convidados2[100] = 'Luís';
+
+        console.log(lista_convidados2);
+
+        //for in
+        for(let x in lista_convidados2){
+            //x . em iteração x, vai receber o índice de cada posição do array
+            console.log('indice: ' + x + ' valor: ' + lista_convidados2);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

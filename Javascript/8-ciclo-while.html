@@ -11,18 +11,21 @@
         while (x < 10) {
             document.write(x + '<br>')
             
-            /*Continue - salta a interação
-            if (x === 3) continue; NÃO ESTÁ A DAR IDK WHY*/
-
+            
             //break - sai do ciclo
             if(x == 5){
                 break
             }
-            
-            //Condição de paragem - aumento de x
-            //x = x +1
-            
-            x++
+           
+           //Condição de paragem - aumento de x
+           x++
+
+            //Continue (usar no final do ciclo) - salta a interação
+            if (x === 3){
+                x++;
+                continue;
+            }
+
         }
         document.write('Fim')
         

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+    <script>
+        //3 tipos de scopes - global, função, bloco (if, for, white)
+        
+        //global
+        let serie = 'Harry Potter'
+
+        //scope de bloco
+        if(serie === 'Harry Potter'){
+            console.log('serie: ' + serie)//conseguimos aceder a variável global
+            let serie1 = 'Games of thrones' //variavel de bloco
+        }
+
+        //scope de Função
+        function x(){
+            console.log(serie)//conseguimos aceder a variavel global 
+
+            let serie2 = 'Breaking Bad' //Variavel de Função 
+        }
+
+        console.log(serie)//conseguimos aceder a variavel global
+        //console.log(serie1) //erro, variavel nao definida
+        console.log("serie2:" +serie2) //Vai dar erro variavel não definida
+
+        x()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

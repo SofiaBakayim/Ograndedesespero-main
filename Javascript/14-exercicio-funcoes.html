@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7 </title>
+    <script>
+        
+        /*function calcularArea(largura, altura, diagonal){
+
+        let area = largura * altura * diagonal;
+
+        //retornar valor
+        return area;
+        }
+
+        if(area % 2 == 0){ 
+        documet.write("Par number");
+        }
+        else if(area % 1 == 1){ 
+        document.write("Impar number")
+        }   
+
+        let altura = prompt('Digite a altura do terreno')
+        let diagonal = prompt('Digite a diagonal do terreno')
+        let largura = prompt('Digite a largura do terreno')
+
+        let area = calcularArea(largura, altura, diagonal, 10);
+        console.log(area);
+
+        document.write("O terreno em " + area + "m²")*/
+
+        //Exercício corrigido - Somar 3 números
+
+        function somarTresNumeros(n1, n2, n3){
+            return parseFloat(n1) + parseFloat(n2) + parseFloat(n3)
+        }
+
+        let numero1 = parseFloat(prompt("Digite o primeiro numero"))
+        let numero2 = parseFloat(prompt("Digite o segundo numero"))
+        let numero3 = parseFloat(prompt("Digite o terceiro numero"))
+
+        let soma = somarTresNumeros(numero1, numero2, numero3);
+        console.log(`A soma de ${numero1}, ${numero2}, ${numero3} é ${soma}`)
+
+        //Par ou Impar 
+        function parOuImpar(numero){
+            let num = parseFloat(numero);
+            if(num % 2 == 0){
+                return "Par";
+            }
+            else if(num % 2 == 1){
+                return "Impar";
+            }
+            else{
+                return "Número Inválido";
+            }
+            
+        }
+        
+        ///---outra forma
+
+        //operador ternario
+        //testar a condição ? valor se verdadeiro : valor se falso
+        //return (num % 2 == 0) ? "Par" : "Impar";
+
+        //Fim função
+        let res = parOuImpar(6);
+        console.log(res);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

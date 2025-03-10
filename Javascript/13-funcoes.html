@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+        function calcularArea(largura, altura){
+
+            //função descarta parametros a mais
+            //logica
+            let area = largura * altura;
+
+            //void - não têm retorno
+            //console.log(area);
+            //document.write(area)
+
+            //retornar valor
+            return area;
+        }
+
+        //o utilizador digita os valores
+        largura = prompt("digite a largura do terreno")
+        altura = prompt("digite a altura do terreno")
+
+        let area = calcularArea(largura, altura, 10);
+        console.log(area);
+
+        document.write("O terreno em " + area + "m²") 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

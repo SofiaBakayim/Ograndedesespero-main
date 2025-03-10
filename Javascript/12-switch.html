@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script>
+        let x = 4;
+        switch(x){
+            case 1:
+                document.write("x === 1");
+            case 2:
+                document.write("x === 2");
+            case 3:
+                document.write("x === 3");
+                    break;
+            default:
+                document.write("x não é nem 1, nem 2, nem 3");
+            }
+
+            ///--- dias da semana
+            let dia
+            switch(new Date().getDay()){
+                case 0:
+                    dia = 'Domingo'
+                    break;
+                case 1:
+                    dia = 'Segunda-feira'
+                    break;
+                case 2:
+                    dia = 'Terça-feira'
+                    break;
+                case 3:
+                    dia = 'Quarta-feira'
+                    break;
+                case 4:
+                    dia = 'Quinta-feira'
+                    break;
+                case 5:
+                    dia = 'Sexta-feira'
+                    break;
+                case 6:
+                    dia = 'Sábado'
+                    break;
+            }
+
+            document.write(`<br><h1>Hoje é ${dia} </h1>`)
+            document.write('<br><h1>Hoje é ' + dia + '</h1>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
