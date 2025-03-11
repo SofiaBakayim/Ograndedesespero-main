@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom. mudança de class</title>
+    <style>
+        .estilo1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+        }
+        .estilo2{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: blue;
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+
+        }
+    </style>
+    <script>
+        function mudarClasse(){
+            document.getElementById('div1').className = 'estilo2'
+        }
+    </script>
+</head>
+<body>
+    <h1>Mudar a classe de um elemento</h1>
+    <button onclick="mudarClasse()" style="cursor: pointer;">Mudar Classe</button>
+    <br>
+    <br>
+    <div id="div1" class="estilo1">Promoções</div>
+</body>
+</html>
