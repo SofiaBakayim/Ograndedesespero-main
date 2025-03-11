@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento do teclado</title>
+    <script>
+        function verificarTecla(e){
+            let tecla = e.key || e.keyCode;
+            alert('Tecla pressionada: ' + tecla + ', código da tecla ' + e.keyCode)
+            //return false; permite que a tecla seja registada no campo
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="campo"
+    onkeydown="console.log('Tecla pressionada!')"
+    onkeypress="verificarTecla(event)">
+</body>
+</html>

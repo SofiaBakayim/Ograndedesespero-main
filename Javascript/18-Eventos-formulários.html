@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Formulários</title>
+    <script>
+        function getFocus(){
+            console.log('Campo com foco')
+        }
+        function loseFocus(){
+            console.log('Campo sem foco')
+        }
+        //select - função
+        function getCombo(selectObject){
+            let value = selectObject.value;
+            console.log(value);
+        }
+        function setCorFundo(selectObject){
+            let value = selectObject.value;
+            //cor de fundo
+            document.body.style.backgroundColor = value;
+        }
+        </script>
+</head>
+<body>
+    <h1>Eventos de formulário</h1>
+    <form name="form1" action="">
+        <p>
+            Nome: <input 
+            type="text" 
+            name="nome" 
+            id="nome"
+            onfocus="getFocus()"
+            onblur="loseFocus()">
+        </p>
+
+        <p>
+            País da EU:
+            <select name="país" id="país" onchange="getCombo(this)">
+                <option value="Alemanha">Alemanha</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Itália">Itália</option>
+                <option value="França">França</option>
+                <option value="Grécia">Grécia</option>
+            </select>
+        </p>
+
+        <p>
+            Escolher a cor de fundo da página:
+            <select id="cor" name="cor" onchange="setCorFundo(this)">
+                <option value="#add8e6">Azul</option>
+                <option value="#cc0000">Vermelho</option>
+                <option value="#389228">Verde</option>
+                <option value="#eead2d">Amarelo</option>
+                <option value="pink">Rosa</option>
+            </select>
+        </p>
+    </form>
+</body>
+</html>
