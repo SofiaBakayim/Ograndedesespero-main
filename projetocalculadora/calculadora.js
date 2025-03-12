@@ -36,4 +36,16 @@ function calcular(tipo, valor){
         document.getElementById('resultado').value += valor
         //document.getElementById('resultado').value + valor
     }
+
 }
+//fim de função calcular
+    function back() {
+        //1.Pagar o valor 
+        let valor = document.getElementById('resultado').value
+
+        //2.Apagar o último caracter
+        let resultado = valor.slice(0, -1);
+
+        //3.Colocar o novo valor no visor
+        document.getElementById('resultado').value = resultado
+    }
