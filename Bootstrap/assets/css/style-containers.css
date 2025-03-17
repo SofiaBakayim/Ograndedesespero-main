@@ -37,3 +37,33 @@ h1 {
         color: rgb(221, 142, 16);
     }
 }
+
+/* Container */
+
+.container{
+    background-color: gray;
+    padding: 10px;
+}
+
+.container-fluid{
+    background-color: #c3c1c1;
+}
+
+/* tamanho sm */
+.container-sm{
+    border: 2px solid blue;
+    margin-bottom: 30px;
+}
+
+/* tamanho md */
+.container-md{
+    border: 2px solid rgb(33, 201, 131);
+    margin-bottom: 30px;
+}
+
+/* tamanho lg */
+.container-lg{
+    border: 2px solid chocolate;
+    margin-bottom: 30px;
+}
+

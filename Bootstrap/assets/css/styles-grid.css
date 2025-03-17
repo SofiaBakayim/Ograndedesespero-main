@@ -1,0 +1,57 @@
+.container {
+    border: 2px solid palevioletred;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    border: 5px solid mediumpurple;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-11 {
+    border: 2px dashed royalblue;
+    height: 100%;
+    margin: 0;
+}
+
+#largura-limitada {
+    width: 500px;
+}
+
+/*Alinhamento Vertical*/
+
+.vertical {
+    height: 300px;
+    border-color: rgb(27, 10, 43);
+}
+
+.vertical .row {
+    height: 100%;
+}
+
+.vertical .col-3,
+.vertical .col-6 {
+    height: 60px;
+}
+
+/*Offset*/
+#offset{
+    height: auto;
+}
+
+#offset .col-md-3{
+    border: 2px dashed navy;
+    height: 50px;
+    /*width: 100%;*/
+
+}
