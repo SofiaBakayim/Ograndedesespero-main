@@ -1,0 +1,39 @@
+/* XS - xtra small */
+h1 {
+    color: red;
+}
+
+/* SM - small > 576px (telemóveis) */
+@media(min-width: 576px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* MD > 768px (tablet) */
+@media(min-width: 768px) {
+    h1 {
+        color: greenyellow;
+    }
+}
+
+/* LG > 992px (laptop) */
+@media(min-width: 992px) {
+    h1 {
+        color: rgb(23, 87, 94);
+    }
+}
+
+/* XL > 1200px (laptop maior) */
+@media(min-width: 1200px) {
+    h1 {
+        color: rgb(158, 23, 154);
+    }
+}
+
+/* XLL > 1400px (lightscreen) */
+@media(min-width: 1400px) {
+    h1 {
+        color: rgb(221, 142, 16);
+    }
+}

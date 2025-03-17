@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Cabeçalhos-->
+    <h1>Cabeçalho 1</h1>
+    <h2>Cabeçalho 2</h2>
+    <h3>Cabeçalho 3</h3>
+    <h4 class="h1">Cabeçalho 1</h4>
+
+    <!--Display-->
+    <h1 class="display-1">Cabeçalho 1</h1>
+    <h1 class="display-2">Cabeçalho 1</h1>
+    <h1 class="display-3">Cabeçalho 1</h1>
+    <h1 class="display-4">display 4 (recomended)</h1>
+
+    <hr>
+    <!--Paragrafos-->
+    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto porro asperiores sapiente,
+        fugiat
+        perspiciatis voluptates qui maxime ex. Alias voluptatum facere ipsa aspernatur nemo laudantium quasi
+        perspiciatis maxime recusandae in!</p> <!--O lead é utilizado para jornais-->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto porro asperiores sapiente, fugiat
+        perspiciatis voluptates qui maxime ex. Alias voluptatum facere ipsa aspernatur nemo laudantium quasi
+        perspiciatis maxime recusandae in!</p>
+    <p class="text-monospace">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto porro asperiores
+        sapiente, fugiat
+        perspiciatis voluptates qui maxime ex. Alias voluptatum facere ipsa aspernatur nemo laudantium quasi
+        perspiciatis maxime recusandae in!</p>
+
+    <hr>
+    <!--Classes de estilo-->
+    <p class="fw-bold">Texto Negrito</p>
+    <p class="fw-normal">Texto Normal</p>
+    <p class="fst-italic">Texto Itálico</p>
+
+    <hr>
+    <p class="text-uppercase">Letras Maiusculas</p>
+    <p class="text-lowercase">LETRAS minusculas</p> <!--converte para letras mais pequenas-->
+    <p class="text-capitalize">capitalizar texto</p>
+
+    <hr>
+    <!--Alinhamento-->
+    <p class="text-start">Alinhar à esquerda</p>
+    <p class="text-center">Alinhar ao Centro (Centrar o Texto)</p>
+    <p class="text-end">Alinhar à direita</p>
+
+    <hr>
+    <!--Truncagem de texto (VÊ-SE muito em sites de noticías)-->
+    <p class="text-truncate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat iusto quaerat voluptatum repellendus in facere
+        nostrum, asperiores amet nam eligendi est architecto rerum! Culpa quos accusantium tenetur reprehenderit
+        similique possimus.</p>
+    
+    <hr>
+    <!--Lista sem estilo-->
+    <ul class="list-unstyled">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <ul class="list-inline"> <!--bolinhas desapareceram-->
+        <li class="list-inline-item">Item 1</li><!--Resolve o problema de ter que fazer floats-->
+        <li class="list-inline-item">Item 2</li><!--Resolve o problema de ter que fazer floats-->
+        <li class="list-inline-item">Item 3</li><!--Resolve o problema de ter que fazer floats-->
+    </ul>
+</body>
+
+</html>
