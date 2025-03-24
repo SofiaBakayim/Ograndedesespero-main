@@ -1,0 +1,157 @@
+/* ---- Estilo Geral ---*/
+body {
+    /* Cor primária */
+    color: #25282e;
+}
+
+/* Cor Secundária */
+.secondary-color {
+    color: #555;
+}
+
+a,
+i {
+    transition: .5s;
+    text-decoration: none;
+}
+
+footer i{
+    color: #25282e;
+    font-size: 30px;
+}
+
+i:hover{
+    color: rgb(34, 108, 74);
+}
+
+.center-image {
+    /* Centralizar Imagem */
+    background-size: cover;
+    /* Imagem a ocupar todo o espaço disponível */
+    background-position: center;
+}
+
+/* Botão */
+.btn {
+    background-color: #25282e;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 0;
+    /*Retirar a borda*/
+}
+
+.btn:hover {
+    background-color: rgb(34, 108, 74);
+    color: whitesmoke;
+}
+
+/* Botão Hover*/
+
+/* ---- Header ---*/
+#header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#header p {
+    margin-bottom: 0;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    /*Centraliza Horizontalmente*/
+    align-items: center;
+    /*Centraliza Verticalmente*/
+}
+
+#logo {
+    width: 40px !important;
+    margin-right: 15px;
+}
+
+#navbar {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#navbar a {
+    width: 80px;
+    color: #444;
+}
+
+#navbar a:hover {
+    color: rgb(34, 108, 74);
+}
+
+/* Main  Image */
+
+.main-image {
+    height: 400px;
+    background-image: url(../images/g_1.png);
+    position: relative;
+}
+
+.main-image-info {
+    background-color: whitesmoke;
+    padding: 20px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+
+/* --- Galeria --- */
+
+#gallery-container h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+#img-2 {
+    background-image: url(../images/g_2.jpg);
+}
+
+#img-3 {
+    background-image: url(../images/g_3.jpg);
+}
+
+#img-4 {
+    background-image: url(../images/g_4.jpg);
+}
+
+#img-5 {
+    background-image: url(../images/g_5.jpg);
+}
+
+#img-6 {
+    background-image: url(../images/g_6.jpg);
+}
+
+.small-image-container {
+    height: 300px;
+}
+
+#gallery-container h1,
+#gallery-container .col-12,
+#gallery-container .col-md-6 {
+    margin-bottom: 50px;
+}
+
+/* --- Footer --- */
+footer{
+    border-top: 1px solid #ccc;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Icones */
+
+#social-icons-container{
+    padding: 25px;
+}

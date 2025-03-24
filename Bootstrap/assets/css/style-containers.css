@@ -1,6 +1,8 @@
 /* XS - xtra small */
 h1 {
     color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 /* SM - small > 576px (telemóveis) */
@@ -41,29 +43,34 @@ h1 {
 /* Container */
 
 .container{
-    background-color: gray;
+    background-color: rgb(241, 153, 153);
     padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container-fluid{
-    background-color: #c3c1c1;
+    background-color: #793a3a;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* tamanho sm */
 .container-sm{
     border: 2px solid blue;
     margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* tamanho md */
 .container-md{
     border: 2px solid rgb(33, 201, 131);
     margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* tamanho lg */
 .container-lg{
     border: 2px solid chocolate;
     margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
