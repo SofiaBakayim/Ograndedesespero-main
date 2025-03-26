@@ -1,7 +1,75 @@
-#imagem{
-    border: 1px solid black;
+body{
+    background-color: #f8f8f8;
+    font-family:monospace;
 }
 
-#formulario{
-    border: 1px solid red;
+/* --- FORM --- */
+
+#form-container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
+    margin: 25px auto;
+    padding: 25px;
+}
+
+#form-container h2{
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* --- Links --- */
+
+#imagem a{
+    color: #222;
+    transition: .5s;
+}
+
+#imagem a:hover{
+    color: #6c63ff;
+}
+
+#imagem, #link-container{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn{ 
+    background-color: #6c63ff;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
+    border-color: #6c63ff;
+}
+
+.btn:hover{
+    background-color: #222;
+    color: #f8f8f8;
+}
+
+#newsletter
+
+/* Desativar border dos camppos inputs*/
+
+#form-container .form-control{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#form-container .form-control:focus{
+    box-shadow: none;
+}
+
+/* largura do botão */
+
+.btn.btn-primary{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* --- Ajustes --- */
+
+@media(min-width: 768px){
+    .btn.btn-primary{
+        width: auto;
+    }
 }
