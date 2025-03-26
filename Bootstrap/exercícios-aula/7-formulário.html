@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .col-4{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .mb-4{
+            font-family: 'Courier New', Courier, monospace;
+            width: 300px;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-4" m-4>
+        <h2>Formulário</h2>
+        <form>
+            <fieldset disabled>
+            <div class="mb-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" required
+                placeholder="Digite o seu email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nós nunca partilharemos o seu email com terceiros</div>    
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" name="password" id="password" required
+                placeholder="Digite a sua senha" aria-describedby="Digite a sua senha">  
+            </div>
+            <input type="submit" class="btn btn-danger" value="Enviar">
+            <button type="submit" class="btn btn-secondary">Registrar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
